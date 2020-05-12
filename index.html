@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Control panel</title>
+		<link rel="stylesheet"type="text/css" href="./style.css" />
+	</head>
+	<body onload="init()"> 
+		<h1>Control panel</h1>
+	
+		<div class="device__container">
+
+			<div id="lamp_title" class="device__title" onclick="show_more(status)">Lampka</div>
+			<div id="lamp_switch_cont">
+				<input type="checkbox" id="lamp_switch" class="cbx hidden" onClick="toggle_lamp()"/> 
+				<label for="lamp_switch" class="lamp_switch__label"></label>
+			</div>
+
+			<div id="lampd_title" class="device__title">Daemon</div>
+			<div id="lampd_status_cont"></div>
+
+		</div>
+
+
+		<script type="text/javascript" src="./script.js"></script>
+	</body>
+</html>
